@@ -9,6 +9,6 @@ __all__ = [
 
 # Official PEP 396
 try:
-    __version__ = version("fastmindapi")
+    __version__ = version("maillard")
 except PackageNotFoundError:
     __version__ = "unknown version"
