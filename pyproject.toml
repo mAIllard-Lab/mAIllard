@@ -1,0 +1,35 @@
+
+[project]
+name = "maillard"
+description = "..."
+dynamic = ["version", "dependencies"]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Haoming Lv", email = "" },
+    { name = "Youxu Shi", email = "yxshi012@gmail.com" },
+    { name = "Mengsong Wu", email = "radi.cat@qq.com" },
+]
+maintainers = [
+    { name = "Haoming Lv", email = "" },
+    { name = "Youxu Shi", email = "yxshi012@gmail.com" },
+    { name = "Mengsong Wu", email = "radi.cat@qq.com" },
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mAIllard"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+# "Homepage" = "https://github.com/fairyshine/FastMindAPI/"
+# "Bug Tracker" = "https://github.com/fairyshine/FastMindAPI/issues"
+# "Source" = "https://github.com/fairyshine/FastMindAPI"
+
+[project.scripts]
+# fastmindapi-server = "fastmindapi.cli:run_server"
