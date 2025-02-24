@@ -13,6 +13,7 @@ class mAIllardPPOTrainer(PPOTrainer, Trainer):
         reward_model,
         ref_model,
         tokenizer,
+        data_collator,
         processor,
         train_dataset,
         eval_dataset
